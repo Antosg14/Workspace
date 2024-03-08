@@ -1,0 +1,70 @@
+.seccion_principal {
+    width: 100%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+
+}
+
+.titulos {
+    background-color: #00ABEB;
+    width: 25%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.abajo {
+    width: 24.6%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+.imagen {
+    width: 150px;
+    height: auto;
+    margin-top: 150px;
+    margin-left: 10px;
+    
+}
+
+.tit_izq {
+    font-family: Poppins;
+    color: white;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+.sub_izq {
+    font-family: Poppins;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.frase_izq {
+    font-family: Poppins;
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.abajo_cuenta {
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-family: Poppins;
+}
+
+.abajo_reg {
+    color: #00ABEB;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: -15px;
+    font-family: Poppins;
+
+}

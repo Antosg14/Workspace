@@ -20,10 +20,22 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Angular'`, () => {
+  it(`verificar fizz buzz`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Angular');
+    expect(app.fizz(15)).toEqual('fizzbuzz');
+  });
+
+  it(`verificar fizz`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.fizz(3)).toEqual('fizz');
+  });
+
+  it(`verificar buzz`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.fizz(20)).toEqual('buzz');
   });
 
   it('should render title', () => {
@@ -33,3 +45,4 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span')?.textContent).toContain('Angular app is running!');
   });
 });
+
