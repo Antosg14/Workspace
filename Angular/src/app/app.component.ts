@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular';
-  
+
 fizz (input: number) {
   if (input > 0 && input >=100 && (input % 3) == 0 ){
    return("fizz");
@@ -27,7 +27,28 @@ else {
 }
 
 return("fin");
+} 
+anagrama(palabra1:string,palabra2:string): 
+  boolean {
+    if (palabra1.length == palabra2.length) {
+      palabra1.split('').sort() == palabra2.split('').sort()
+        return false;
+    }
+    else if (palabra1.length != palabra2.length) {
+      return false;
+    }
+    return true;
 }
 
-}
 
+ secuenciaFibo (num: number)
+{
+const fib = [0,1]
+
+for (let i =2; i<= num ; i++)
+{
+  fib[i] = fib[i-1] + fib [i -2]
+}
+return fib
+}
+}

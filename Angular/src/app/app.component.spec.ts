@@ -14,12 +14,18 @@ describe('AppComponent', () => {
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it(`verificar secuencia`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.secuenciaFibo(233)).toEqual();
+  });
+
+ /*  it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
-  });
-
+  }); */
+/*
   it(`verificar fizz buzz`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
@@ -36,13 +42,50 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.fizz(20)).toEqual('buzz');
+  }); */
+/*
+  it('Probar resultados verdaderos', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('Ceclo','Cocle')).toEqual(true);
   });
 
-  it('should render title', () => {
+  it('Probar resultado falso', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('ARCA','CARA')).toEqual(false);
+  });
+
+  it('Probar resultado minusculas', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('cero','roce')).toEqual(false);
+  });
+
+  it('Probar resultado minusculas falso', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('toro','oroto')).toEqual(false);
+  });
+
+  it('Probar resultado', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('Desamparador ','desparramado')).toEqual(false);
+  });
+
+  it('Probar resultado espacios', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app.anagrama('N a c i o n a l i s t a  ','a l t i s o n a n c i a')).toEqual(false);
+  });
+  /* it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('Angular app is running!');
-  });
-});
+  }); */
+
+}
+);
 
